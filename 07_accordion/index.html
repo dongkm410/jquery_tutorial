@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery-accordion</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>accordion</h1>
+
+      <div class="accordion">
+        <h2>This is title1</h2>
+        <p class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga totam
+          eveniet nulla excepturi ipsa? Dolorem aspernatur veritatis ab nam hic
+          esse libero consectetur dolore? Laboriosam dolorem perspiciatis enim
+          dolor atque!
+        </p>
+
+        <h2>This is title2</h2>
+        <p class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          inventore unde quam quaerat culpa adipisci quia provident a neque est?
+          Accusantium nisi laboriosam qui nemo, explicabo commodi consectetur et
+          veritatis sint iure fugit tenetur recusandae culpa alias harum
+          repellendus? Alias quasi dicta impedit accusantium ducimus veritatis
+          numquam exercitationem omnis magnam minus nobis in iure eaque, cumque
+          ex quaerat quam, quidem perspiciatis esse. Dolore dignissimos, nemo
+          dolores ipsam velit quos rerum. Error rem eos consequuntur quasi
+          tempora corrupti impedit dolores, tempore, sint recusandae quisquam
+          quo, at voluptates commodi nihil. Magni temporibus laboriosam vero eum
+          ipsa odio, deserunt beatae labore ipsam nulla!
+        </p>
+
+        <h2>This is title3</h2>
+        <p class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga totam
+          eveniet nulla excepturi ipsa? Dolorem aspernatur veritatis ab nam hic
+          esse libero consectetur dolore? Laboriosam dolorem perspiciatis enim
+          dolor atque!
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var title = $('.accordion h2');
+      var content = $('.content');
+
+      title.eq(0).addClass('active');
+      content.eq(0).slideDown();
+
+      title.click(function () {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle();
+      });
+    </script>
+  </body>
+</html>
