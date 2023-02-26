@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery-tab2</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>tab 2</h1>
+      <section>
+        <ul class="tab">
+          <li><a href="#x">tab1</a></li>
+          <li><a href="#x">tab2</a></li>
+          <li><a href="#x">tab3</a></li>
+        </ul>
+
+        <div class="content">
+          내 별에도 무엇인지 까닭입니다. 우는 무덤 언덕 지나고 당신은 겨울이
+          아스라히 듯합니다. 별 불러 이름자 가을로 않은 봅니다. 토끼, 보고, 아직
+          이 하나 이름자 듯합니다. 노루, 슬퍼하는 잠, 내 무엇인지 보고, 사람들의
+          쓸쓸함과 하나에 계십니다. 이름과, 그리고 내 릴케 이런 그러나 딴은
+          있습니다. 이름과, 많은 겨울이 보고, 이제 된 까닭입니다. 나는 강아지,
+          하나에 써 하나에 자랑처럼 소녀들의 옥 마리아 까닭입니다. 그리워
+          슬퍼하는 헤는 어머니, 내 언덕 가득 봅니다.
+        </div>
+        <div class="content">
+          묻힌 벌써 없이 밤이 별들을 버리었습니다. 패, 계집애들의 말 동경과
+          계십니다. 무덤 추억과 딴은 별 않은 위에 보고, 동경과 옥 있습니다. 한
+          묻힌 보고, 지나고 못 쓸쓸함과 밤을 계십니다. 강아지, 하나의 이름을
+          까닭입니다. 하나 멀리 하나에 이런 위에 경, 릴케 하나에 듯합니다.
+          피어나듯이 까닭이요, 새워 이국 이름을 책상을 써 마디씩 없이 있습니다.
+          북간도에 어머님, 것은 아직 듯합니다. 하나에 청춘이 그리고 다 부끄러운
+          써 토끼, 봅니다.
+        </div>
+        <div class="content">
+          까닭이요, 아스라히 책상을 슬퍼하는 없이 하나의 내 이웃 자랑처럼
+          거외다. 봄이 많은 없이 패, 아침이 내린 가을로 듯합니다. 어머님, 잠,
+          속의 듯합니다. 청춘이 오면 마리아 까닭입니다. 차 우는 하나 하나에 내
+          옥 버리었습니다. 언덕 시인의 하나에 나는 계집애들의 듯합니다. 이국
+          지나가는 잔디가 어머니 새겨지는 위에 다 거외다. 별빛이 가을로 하늘에는
+          어머님, 가슴속에 이네들은 된 별 거외다. 그러나 같이 나는 어머니,
+          하나에 별 릴케 멀리 너무나 듯합니다.
+        </div>
+      </section>
+    </div>
+    <script>
+      var btns = $('.tab li');
+      var contents = $('.content');
+
+      btns.eq(0).addClass('active');
+      contents.hide().eq(0).show();
+
+      btns.click(function () {
+        btns.removeClass('active');
+        $(this).addClass('active');
+        contents.hide();
+        contents.eq($(this).index()).show();
+      });
+    </script>
+  </body>
+</html>
