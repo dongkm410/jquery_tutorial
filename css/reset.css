@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -23,10 +21,11 @@ button {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* section */
 section {
   max-width: 1000px;
   margin: 0 auto;
