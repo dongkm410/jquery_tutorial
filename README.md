@@ -1,16 +1,22 @@
-# 안녕하세요
+# jquery tutorial
 
-## 작은 글자
+### magnific popup
 
-### 더 작은 글자
+https://dimsemenov.com/plugins/magnific-popup/
+
+### slick slide
+
+https://kenwheeler.github.io/slick/
+
+### scroll reveal
+
+https://scrollrevealjs.org/api/after-reset.html
 
 그냥 적으면
-뒤에 다가
+줄바꿈 없고
 공백 두개를 두면  
 띄어쓰기가 되요
 
 ```
 var headerClone = $('header').contents().clone();
 ```
-
-README 참고문서
