@@ -12,6 +12,10 @@ https://kenwheeler.github.io/slick/
 
 https://scrollrevealjs.org/api/after-reset.html
 
+### fullPage
+
+https://alvarotrigo.com/fullPage/ko/
+
 그냥 적으면
 줄바꿈 없고
 공백 두개를 두면  
